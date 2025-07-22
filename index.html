@@ -33,7 +33,6 @@
         }
 
         /* Header */
-                /* Header */
         .header {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
@@ -51,21 +50,25 @@
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
         }
 
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
         .logo {
             color: white;
             font-size: 24px;
             font-weight: bold;
             transition: color 0.3s ease;
-        }
-
-        /* 滚动时logo颜色变化 */
-        .header.scrolled .logo {
-            color: #1f2937;
+            flex-shrink: 0;
         }
 
         .nav-links {
             display: flex;
             gap: 30px;
+            margin-left: auto;
         }
 
         .nav-links a {
@@ -73,6 +76,12 @@
             text-decoration: none;
             font-weight: 500;
             transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        /* 滚动时logo颜色变化 */
+        .header.scrolled .logo {
+            color: #1f2937;
         }
 
         /* 滚动时导航链接颜色变化 */
@@ -82,6 +91,29 @@
 
         .nav-links a:hover {
             opacity: 0.8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                gap: 20px;
+                font-size: 0.9rem;
+            }
+            
+            .logo {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-links {
+                gap: 15px;
+                font-size: 0.8rem;
+            }
+            
+            .logo {
+                font-size: 18px;
+            }
         }
 
         /* Hero Section */
@@ -473,56 +505,7 @@
             text-align: center;
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 2.5rem;
-            }
 
-            .contact-buttons {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .nav-links {
-                gap: 20px;
-                font-size: 0.9rem;
-            }
-
-            .timeline::before {
-                left: 20px;
-            }
-
-            .timeline-item:nth-child(odd) .timeline-content,
-            .timeline-item:nth-child(even) .timeline-content {
-                margin-left: 50px;
-                margin-right: 0;
-                padding-left: 20px;
-                padding-right: 20px;
-                text-align: left;
-            }
-
-            .timeline-dot {
-                left: 20px;
-            }
-
-            .contact-info {
-                flex-direction: column;
-                gap: 20px;
-            }
-        }
-
-        /* 更小屏幕的额外处理 */
-        @media (max-width: 480px) {
-            .nav-links {
-                gap: 15px;
-                font-size: 0.8rem;
-            }
-            
-            .logo {
-                font-size: 20px;
-            }
-        }
     </style>
 </head>
 
