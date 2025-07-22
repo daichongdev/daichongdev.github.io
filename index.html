@@ -33,6 +33,7 @@
         }
 
         /* Header */
+                /* Header */
         .header {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
@@ -40,18 +41,26 @@
             position: sticky;
             top: 0;
             z-index: 100;
+            transition: all 0.3s ease;
         }
 
-        .nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+        /* 滚动时的导航栏样式 */
+        .header.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
         }
 
         .logo {
             color: white;
             font-size: 24px;
             font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        /* 滚动时logo颜色变化 */
+        .header.scrolled .logo {
+            color: #1f2937;
         }
 
         .nav-links {
@@ -63,7 +72,12 @@
             color: white;
             text-decoration: none;
             font-weight: 500;
-            transition: opacity 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        /* 滚动时导航链接颜色变化 */
+        .header.scrolled .nav-links a {
+            color: #1f2937;
         }
 
         .nav-links a:hover {
@@ -757,6 +771,17 @@
     </footer>
 
     <script>
+         // 导航栏滚动效果
+        const header = document.querySelector('.header');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
         // 平滑滚动
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
