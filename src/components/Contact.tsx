@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const Contact = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
     <section className="py-32 md:py-48 bg-surface" id="contact">
@@ -23,11 +23,12 @@ const Contact = () => {
           />
           <div className="relative z-10">
             <h2 className="font-headline text-5xl md:text-7xl font-extrabold tracking-tight mb-8">
-              {t(
+              {language === 'en' ? (
                 <>
                   Let's build something <br className="hidden md:block" />
                   remarkable.
-                </>,
+                </>
+              ) : (
                 <>
                   让我们一起构建
                   <br className="hidden md:block" />
