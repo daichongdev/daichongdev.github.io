@@ -8,13 +8,15 @@ import Projects from './components/Projects';
 import OpenSource from './components/OpenSource';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import AnimatedBackground from './components/AnimatedBackground';
 
 function App() {
   return (
     <LanguageProvider>
-      <div className="min-h-screen">
+      <div className="min-h-screen relative">
+        <AnimatedBackground />
         <Header />
-        <main className="pt-32">
+        <main className="pt-32 relative z-10">
           <Hero />
           <About />
           <Skills />
