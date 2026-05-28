@@ -9,39 +9,39 @@ const Projects = () => {
 
   const projects = [
     {
+      image: 'https://images.unsplash.com/photo-1434494878577-86c23bcb06b9?q=80&w=2070&auto=format&fit=crop',
+      tags: ['Java', 'PHP', 'Go', 'K8s'],
+      title: t('Smart Wearable Ecosystem', '智能手表生态系统'),
+      description: t(
+        'Three independent systems (Private/Public/International) with real-time watch-app data sync. Sports data converts to points for offline purchases and online redemption. International version supports blockchain currency conversion. Includes dealer system with quick payment codes and supply chain synchronization.',
+        '三个独立系统（私域版/公域版/国际版）实现智能手表与App数据实时互联。运动数据转化为积分，支持线下门店消费及线上兑换。国际版支持链上货币转化。包含经销商快速付款码下单系统和供应链实时同步。'
+      ),
+    },
+    {
       image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop',
-      tags: ['Golang', 'Stripe'],
-      title: t('Microservices e-commerce', '微服务电商项目'),
+      tags: ['Go', 'Microservices', 'Redis'],
+      title: t('Check-in Ecosystem', '打卡生态系统'),
       description: t(
-        'I designed and implemented a distributed e-commerce platform that supports high-concurrency access, encompassing multiple microservice modules such as user service, product service, and order service.',
-        '设计并实现了分布式电商平台，支持高并发访问，包含用户服务、商品服务、订单服务等多个微服务模块。'
+        'Multi-dimensional check-in points system (WeChat steps, water intake, meals, health monitoring). Serving 3000+ partner merchants in Zhejiang. Unified payment gateway supporting WeChat, Alipay, Tonglian, points, and coupons. Merchant dashboard and supply chain procurement management.',
+        '微信步数、喝水、吃饭、健康监测等多维度打卡积分体系。服务浙江地区3000+合作商家。统一支付网关支持微信、支付宝、通联、积分、优惠券等。商家端数据看板+掌柜端供应链进货管理。'
       ),
     },
     {
-      image: 'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=2076&auto=format&fit=crop',
-      tags: ['Java', 'SpringBoot'],
-      title: t('Enterprise management system', '企业管理系统'),
+      image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=2074&auto=format&fit=crop',
+      tags: ['PHP', 'Laravel', 'Agora RTC'],
+      title: t('Live Streaming E-commerce', '直播电商系统'),
       description: t(
-        'We have developed a comprehensive enterprise management system that encompasses functions such as permission management, data statistics, and report generation, and supports a multi-tenant architecture.',
-        '开发了完整的企业管理系统，包含权限管理、数据统计、报表生成等功能，支持多租户架构。'
+        'Comprehensive distributed live streaming platform with gift effects, red packet system, and multi-CDN intelligent switching. Integrated Agora RTC/RTM for 1v1 and 1vN video calls. High-concurrency message queue processing with object pool and Supervisor. Dynamic group buying and multi-payment gateway integration.',
+        '完整的分布式直播电商平台，包含礼物特效、红包系统、多CDN智能切换。集成声网RTC/RTM支持1v1/1vN视频通话。高并发消息队列处理（对象池+Supervisor）。动态人数拼团和多支付通道集成。'
       ),
     },
     {
-      image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=2070&auto=format&fit=crop',
-      tags: ['Java', 'PHP', 'Yii2', 'SpringBoot'],
-      title: t('Video lecture system', '视频讲座系统'),
+      image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2015&auto=format&fit=crop',
+      tags: ['Python', 'Task Engine', 'OSS'],
+      title: t('Visual Task Management System', '可视化任务管理系统'),
       description: t(
-        'Design and develop a lecture system from scratch, encompassing features such as live broadcast push notifications, paid viewing, and simulated classroom events for rooms, both on the APP and Web platforms.',
-        '从0-1设计并开发讲座系统，包含APP和Web的开播推送、付费观看、房间模拟上课事件等。'
-      ),
-    },
-    {
-      image: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop',
-      tags: ['PHP', 'Laravel'],
-      title: t('Live Streaming E-commerce', '直播电商'),
-      description: t(
-        'We have developed a comprehensive distributed live streaming e-commerce system, encompassing push and pull streaming, live streaming data reporting, red packet snatching in live streaming rooms, and anchor registration, among other features.',
-        '开发了完整的分布式直播电商系统，包含推拉流、直播数据报表、直播间抢红包，主播入驻等。'
+        'Visual task flow engine supporting multi-modal content (files, images, videos). Python crawler cluster with OSS object storage for distributed data collection. Flexible workflow configuration for complex business scenarios with automated task scheduling and monitoring.',
+        '可视化任务流引擎，支持文件/图片/视频多模态内容。Python爬虫集群+OSS对象存储实现分布式数据采集。灵活的工作流配置支持复杂业务场景，自动化任务调度和监控。'
       ),
     },
   ];

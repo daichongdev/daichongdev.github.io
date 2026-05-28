@@ -8,39 +8,39 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      icon: 'dashboard',
-      title: t('Frontend', '前端开发'),
-      skills: [
-        { name: 'React', level: t('Senior', '高级') },
-        { name: 'Vue', level: t('Advanced', '熟练') },
-        { name: 'Tailwind CSS', level: t('Advanced', '熟练') },
-      ],
-    },
-    {
       icon: 'dns',
-      title: t('Backend', '后端开发'),
+      title: t('Backend Development', '后端开发'),
       skills: [
-        { name: 'GO / Gin', level: t('Advanced', '熟练') },
-        { name: 'Java / Spring', level: t('Senior', '高级') },
-        { name: 'PHP / Laravel', level: t('Advanced', '熟练') },
+        { name: 'PHP / Laravel / Yii2', level: t('5 Years', '5年经验') },
+        { name: 'Java / Spring Boot', level: t('Advanced', '熟练') },
+        { name: 'Go / Gin', level: t('Microservices', '微服务') },
       ],
     },
     {
-      icon: 'smart_toy',
-      title: t('AI / Automation', 'AI 与自动化'),
+      icon: 'cloud',
+      title: t('Cloud Native & DevOps', '云原生与运维'),
       skills: [
-        { name: 'Python / PyTorch', level: t('Advanced', '熟练') },
-        { name: 'OpenAI / LangChain', level: t('Advanced', '熟练') },
-        { name: 'n8n / Zapier', level: t('Advanced', '熟练') },
+        { name: 'Kubernetes (K8s)', level: t('Production', '生产环境') },
+        { name: 'GitHub / CI/CD', level: t('Automation', '自动化') },
+        { name: 'Serverless / NLB', level: t('Auto-scaling', '自动伸缩') },
       ],
     },
     {
-      icon: 'settings_ethernet',
-      title: t('Infrastructure', '基础设施'),
+      icon: 'storage',
+      title: t('Database & Cache', '数据库与缓存'),
       skills: [
-        { name: 'Docker / K8s', level: t('Advanced', '熟练') },
-        { name: 'Git / CI/CD', level: t('Advanced', '熟练') },
-        { name: 'AWS / GCP', level: t('Advanced', '熟练') },
+        { name: 'MySQL', level: t('Master-Slave', '主从架构') },
+        { name: 'Redis Cluster', level: t('Advanced', '熟练') },
+        { name: 'Read-Write Split', level: t('High Concurrency', '高并发') },
+      ],
+    },
+    {
+      icon: 'dashboard',
+      title: t('Frontend & Integration', '前端与集成'),
+      skills: [
+        { name: 'React / Vue', level: t('Advanced', '熟练') },
+        { name: 'WeChat Mini Program', level: t('Advanced', '熟练') },
+        { name: 'RTC / Payment Gateway', level: t('Integration', '集成') },
       ],
     },
   ];
@@ -78,8 +78,8 @@ const Skills = () => {
           className="text-outline max-w-xl mx-auto"
         >
           {t(
-            'A modern stack designed for speed, intelligence, and maintainability.',
-            '专为速度、智能和可维护性设计的现代技术栈。'
+            'Multi-language expertise with production-grade cloud infrastructure and high-concurrency optimization.',
+            '多语言开发能力，结合生产级云基础设施和高并发优化经验。'
           )}
         </motion.p>
       </div>

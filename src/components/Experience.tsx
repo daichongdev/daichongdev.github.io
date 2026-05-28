@@ -6,33 +6,33 @@ const Experience = () => {
 
   const experiences = [
     {
-      period: t('2022 — Present', '2022年至今'),
-      title: t('Senior Full Stack Developer', '高级全栈开发工程师'),
-      company: t('Tech Innovation Co.', '科技创新公司'),
+      period: t('2023.07 — Present', '2023年7月至今'),
+      title: t('Full Stack Developer', '全栈开发工程师'),
+      company: t('Health Tech Company', '健康科技公司'),
       description: t(
-        'Responsible for the architecture design and development of core business systems. Built high-performance microservices architecture using Go and React, optimizing system performance by over 50%. Led the team in delivering multiple key projects.',
-        '负责核心业务系统的架构设计与开发，使用Go和React构建高性能微服务架构，优化系统性能提升50%以上。领导团队完成多个重要项目的交付。'
+        'Leading development of smart wearable ecosystems (Private/Public/International versions) with real-time data synchronization between watches and apps. Built points system converting sports data to rewards, integrated blockchain currency, and developed supply chain systems. Tech stack: Java (core business) + PHP (e-commerce) + Go (microservices) + K8s deployment. Also built check-in ecosystem serving 3000+ merchants with unified payment gateway.',
+        '负责智能手表生态系统开发（私域版/公域版/国际版），实现手表与App数据实时互联。构建运动数据转积分体系，支持线下消费及链上货币转化。开发经销商系统和供应链系统。技术栈：Java（核心业务）+ PHP（商城系统）+ Go（供应链微服务）+ K8s容器化部署。同时开发打卡生态系统，服务3000+合作商家，实现统一支付网关。'
       ),
       active: true,
     },
     {
-      period: t('2020 — 2022', '2020-2022年'),
+      period: t('2020.03 — 2023.07', '2020年3月-2023年7月'),
       title: t('Full Stack Developer', '全栈开发工程师'),
-      company: t('Internet Co.', '互联网公司'),
+      company: t('Social E-commerce Platform', '社交电商平台'),
       description: t(
-        'Participated in the development and maintenance of e-commerce platforms using Java Spring Boot and Vue.js tech stack. Responsible for the development of core modules such as user systems and order systems, handling performance optimization in high-concurrency scenarios.',
-        '参与电商平台的开发与维护，使用Java Spring Boot和Vue.js技术栈。负责用户系统、订单系统等核心模块的开发，处理高并发场景下的性能优化。'
+        'Developed live streaming system with gift effects, red packet system, and multi-CDN switching. Integrated Agora RTC/RTM for 1v1 and 1vN video calls. Built e-commerce features including dynamic group buying, coupon verification, and multi-payment gateway integration. Developed task management system with visual workflow engine supporting multi-modal content (files/images/videos) and Python crawler cluster with OSS storage.',
+        '开发直播系统，包含礼物特效、红包系统、多CDN智能切换。集成声网RTC/RTM实现1v1/1vN视频通话。构建电商系统，包括动态人数拼团、优惠券核销（三要素认证）、多支付通道集成。开发任务管理系统，支持可视化任务流引擎（文件/图片/视频多模态）和Python爬虫集群+OSS对象存储。'
       ),
       active: false,
       reverse: true,
     },
     {
-      period: t('2018 — 2020', '2018-2020年'),
+      period: t('2019.07 — 2020.03', '2019年7月-2020年3月'),
       title: t('PHP Developer', 'PHP开发工程师'),
-      company: t('Software Development Co.', '软件开发公司'),
+      company: t('EdTech Company', '在线教育公司'),
       description: t(
-        'Developed enterprise-level Web applications using PHP Laravel framework. Responsible for CMS systems and API development. Accumulated rich experience in database design and performance optimization.',
-        '使用PHP Laravel框架开发企业级Web应用，负责CMS系统、API接口开发。积累了丰富的数据库设计和性能优化经验。'
+        'Developed online education platform with instructor course management, live streaming classes, and student learning system. Built on Edusoho framework with JPush integration for real-time notifications.',
+        '开发在线教育平台，包含讲师课程管理、直播上课、学员学习系统。基于Edusoho框架开发，集成极光推送实现实时通知。'
       ),
       active: false,
     },

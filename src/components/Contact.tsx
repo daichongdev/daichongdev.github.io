@@ -37,33 +37,28 @@ const Contact = () => {
               )}
             </h2>
             <p className="text-white/80 text-xl md:text-2xl mb-12 max-w-2xl mx-auto">
-              {t('Currently accepting new projects and consulting opportunities.', '目前接受新项目和咨询机会。')}
+              {t(
+                'Open to new opportunities and technical collaborations. Feel free to reach out!',
+                '期待新的机会和技术合作，欢迎随时联系！'
+              )}
             </p>
-            <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-white text-primary px-12 py-5 rounded-2xl font-bold text-xl shadow-xl"
-                href="mailto:daichongdev@gmail.com"
+                href="mailto:daichongweb@gmail.com"
               >
                 {t('Get in Touch', '联系我')}
               </motion.a>
-              <div className="flex gap-6 mt-8 md:mt-0">
+              <div className="flex gap-6">
                 <motion.a
                   whileHover={{ scale: 1.2 }}
                   className="text-white/80 hover:text-white transition-colors"
-                  href="#"
-                  title="LinkedIn"
-                >
-                  <span className="material-symbols-outlined" style={{ fontSize: 32 }}>
-                    person_add
-                  </span>
-                </motion.a>
-                <motion.a
-                  whileHover={{ scale: 1.2 }}
-                  className="text-white/80 hover:text-white transition-colors"
-                  href="#"
-                  title="GitHub"
+                  href="https://github.com/daichongweb"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="GitHub (daichongweb)"
                 >
                   <span className="material-symbols-outlined" style={{ fontSize: 32 }}>
                     code
@@ -72,13 +67,37 @@ const Contact = () => {
                 <motion.a
                   whileHover={{ scale: 1.2 }}
                   className="text-white/80 hover:text-white transition-colors"
-                  href="#"
-                  title="Telegram"
+                  href="https://github.com/daichongdev"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title="GitHub (daichongdev)"
                 >
                   <span className="material-symbols-outlined" style={{ fontSize: 32 }}>
-                    send
+                    terminal
                   </span>
                 </motion.a>
+                <motion.a
+                  whileHover={{ scale: 1.2 }}
+                  className="text-white/80 hover:text-white transition-colors"
+                  href="http://www.daichongweb.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  title={t('Tech Blog', '技术博客')}
+                >
+                  <span className="material-symbols-outlined" style={{ fontSize: 32 }}>
+                    article
+                  </span>
+                </motion.a>
+              </div>
+            </div>
+            <div className="flex flex-wrap justify-center gap-6 text-white/70 text-sm">
+              <div className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-[18px]">phone</span>
+                <span>18338392479</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="material-symbols-outlined text-[18px]">mail</span>
+                <span>daichongweb@gmail.com</span>
               </div>
             </div>
           </div>

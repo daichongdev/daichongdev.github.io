@@ -158,7 +158,7 @@ const Hero = () => {
                 ease: 'easeInOut',
               }}
             />
-            <span className="relative">ALEX CHEN</span>
+            <span className="relative">{t('DAI CHONG', '戴崇')}</span>
           </motion.span>
 
           <motion.h1
@@ -182,7 +182,7 @@ const Hero = () => {
                 backgroundSize: '200% 200%',
               }}
             >
-              {t('& AI Engineer', '& AI 工程师')}
+              {t('& Cloud Native Expert', '& 云原生专家')}
             </motion.span>
           </motion.h1>
 
@@ -193,8 +193,8 @@ const Hero = () => {
             className="text-xl md:text-2xl text-outline mb-10 max-w-2xl leading-relaxed"
           >
             {t(
-              'Building intelligent systems with a focus on automation and scalable architectures.',
-              '专注于构建自动化和可扩展架构的智能系统。'
+              'Specializing in multi-language development (PHP/Go/Java), cloud-native architecture, and high-concurrency system design. Delivering scalable solutions for e-commerce and smart wearable ecosystems.',
+              '专注于多语言开发（PHP/Go/Java）、云原生架构和高并发系统设计。为电商和智能穿戴生态提供可扩展的解决方案。'
             )}
           </motion.p>
 
