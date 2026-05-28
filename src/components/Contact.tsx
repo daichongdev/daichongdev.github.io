@@ -92,10 +92,6 @@ const Contact = () => {
             </div>
             <div className="flex flex-wrap justify-center gap-6 text-white/70 text-sm">
               <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined text-[18px]">phone</span>
-                <span>18338392479</span>
-              </div>
-              <div className="flex items-center gap-2">
                 <span className="material-symbols-outlined text-[18px]">mail</span>
                 <span>daichongweb@gmail.com</span>
               </div>
