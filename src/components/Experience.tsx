@@ -7,32 +7,32 @@ const Experience = () => {
   const experiences = [
     {
       period: t('2023.07 — Present', '2023年7月至今'),
-      title: t('Full Stack Developer', '全栈开发工程师'),
+      title: t('Senior Backend Engineer', '高级后端工程师'),
       company: t('Health Tech Company', '健康科技公司'),
       description: t(
-        'Leading development of smart wearable ecosystems (Private/Public/International versions) with real-time data synchronization between watches and apps. Built points system converting sports data to rewards, integrated blockchain currency, and developed supply chain systems. Tech stack: Java (core business) + PHP (e-commerce) + Go (microservices) + K8s deployment. Also built check-in ecosystem serving 3000+ merchants with unified payment gateway.',
-        '负责智能手表生态系统开发（私域版/公域版/国际版），实现手表与App数据实时互联。构建运动数据转积分体系，支持线下消费及链上货币转化。开发经销商系统和供应链系统。技术栈：Java（核心业务）+ PHP（商城系统）+ Go（供应链微服务）+ K8s容器化部署。同时开发打卡生态系统，服务3000+合作商家，实现统一支付网关。'
+        'Leading development of local life + merchant platform and smart wearable system. Built unified membership system with multi-scenario check-in (water, meals, steps, health monitoring), merchant QR code redemption, prepaid value & rebate system, and online mall with social features. Independently developed smart watch system (private/public/international versions) with real-time health data monitoring, points conversion, and blockchain NFT integration. Designed and developed unified payment gateway supporting WeChat Pay, Alipay, LianLian, Tonglian, and Sande payment channels. Built points mall with order management, shopping cart, and marketing tools. Tech stack: Go + Gin, Java + Spring Boot, PHP + Yii/Laravel, deployed via Alibaba Cloud DevOps + Serverless + K8s.',
+        '负责本地生活+商家端项目和智能穿戴系统开发。构建统一会员系统，实现多场景签到打卡（喝水、吃饭、步数、健康监测、到店打卡）、商家扫码核销、会员储值与返利、线上商城及拼团预定等功能。独立开发智能手表系统（私域版/公域版/国际版），实现运动与健康数据实时监测，运动表现转积分，积分兑换商城商品及区块链数字藏品。独立设计开发统一支付中台，接入微信支付、支付宝、连连支付、通联支付、衫德支付等多渠道，支持支付/退款/分账/回调等标准化能力。开发积分商城，包含订单流程、购物车、优惠券、拼团、秒杀等营销工具。技术栈：Go + Gin、Java + Spring Boot、PHP + Yii/Laravel，采用阿里云效+Serverless+K8s自动化部署。'
       ),
       active: true,
     },
     {
       period: t('2020.03 — 2023.07', '2020年3月-2023年7月'),
-      title: t('Full Stack Developer', '全栈开发工程师'),
-      company: t('Social E-commerce Platform', '社交电商平台'),
+      title: t('Backend Engineer', '后端工程师'),
+      company: t('Live Streaming E-commerce Platform', '电商直播平台'),
       description: t(
-        'Developed live streaming system with gift effects, red packet system, and multi-CDN switching. Integrated Agora RTC/RTM for 1v1 and 1vN video calls. Built e-commerce features including dynamic group buying, coupon verification, and multi-payment gateway integration. Developed task management system with visual workflow engine supporting multi-modal content (files/images/videos) and Python crawler cluster with OSS storage.',
-        '开发直播系统，包含礼物特效、红包系统、多CDN智能切换。集成声网RTC/RTM实现1v1/1vN视频通话。构建电商系统，包括动态人数拼团、优惠券核销（三要素认证）、多支付通道集成。开发任务管理系统，支持可视化任务流引擎（文件/图片/视频多模态）和Python爬虫集群+OSS对象存储。'
+        'Developed core modules for private live streaming e-commerce platform serving 30M+ registered users with 100M+ orders and 600k+ daily peak orders. Led live streaming system development with unified service provider integration layer supporting Tencent Cloud, Alibaba Cloud, Qiniu, and Huawei Cloud. Built live room features including red packets, gifts, coupons, real-name authentication, and deposit management. Developed real-time product shelf management system enabling hosts to instantly add/remove/sort products during live streams with millisecond synchronization to viewers. Optimized system performance with Redis + RabbitMQ for high-concurrency activity traffic shaving and K8s HPA auto-scaling. Tech stack: Laravel + Redis + RabbitMQ + MySQL + Kubernetes.',
+        '负责私域直播电商平台核心模块研发，累计注册用户超3000万，订单数据超1亿条，峰值日订单量60万+。主导直播系统开发，设计统一直播服务商接入层，支持腾讯云、阿里云、七牛云、华为云推拉流服务。负责直播间红包、礼物、优惠券、实名认证、保证金等核心业务开发。开发直播带货系统，实现主播端实时管理商品池，一键上架/下架/置顶/调整排序，用户端毫秒级同步商品状态，支持"边播边卖、即上即售"。基于Redis + RabbitMQ实现高并发活动削峰与异步处理，通过K8s HPA自动扩容支撑大型直播活动流量峰值。技术栈：Laravel + Redis + RabbitMQ + MySQL + Kubernetes。'
       ),
       active: false,
       reverse: true,
     },
     {
-      period: t('2019.07 — 2020.03', '2019年7月-2020年3月'),
+      period: t('2017.09 — 2020.03', '2017年9月-2020年3月'),
       title: t('PHP Developer', 'PHP开发工程师'),
-      company: t('EdTech Company', '在线教育公司'),
+      company: t('Hotel SaaS Company', '酒店SaaS公司'),
       description: t(
-        'Developed online education platform with instructor course management, live streaming classes, and student learning system. Built on Edusoho framework with JPush integration for real-time notifications.',
-        '开发在线教育平台，包含讲师课程管理、直播上课、学员学习系统。基于Edusoho框架开发，集成极光推送实现实时通知。'
+        'Developed all-in-one digital operation platform for hotel groups covering room reservation, dining management, conference management, long-term rental, mall operations, and owner management. Led development of reservation center, dining management, and conference management modules. Participated in core business model design for orders, inventory, and room status. Optimized high-concurrency inventory and order processing performance. Tech stack: ThinkPHP + Redis + MySQL.',
+        '负责酒店集团一站式数字化运营平台开发，涵盖客房预订、餐饮管理、会议管理、长租业务、商城运营及业主管理等核心场景。负责预订中心、餐饮管理、会议管理等核心模块研发，参与订单、库存、房态等核心业务模型设计，推动多业务系统数据打通与统一运营管理，优化高并发场景下库存与订单处理性能。技术栈：ThinkPHP + Redis + MySQL。'
       ),
       active: false,
     },

@@ -5,9 +5,9 @@ const About = () => {
   const { t } = useLanguage();
 
   const stats = [
-    { value: '5+', label: t('Years Experience', '年开发经验') },
-    { value: '3000+', label: t('Partner Merchants', '合作商家') },
-    { value: '3', label: t('Ecosystem Platforms', '生态系统平台') },
+    { value: '9+', label: t('Years Experience', '年开发经验') },
+    { value: '30M+', label: t('Users Served', '服务用户数') },
+    { value: '100M+', label: t('Orders Processed', '订单处理量') },
     { value: 'K8s', label: t('Cloud Native', '云原生部署') },
   ];
 
@@ -29,14 +29,14 @@ const About = () => {
             </h2>
             <p className="text-lg text-outline leading-relaxed mb-6">
               {t(
-                'With over 5 years of professional experience, I specialize in multi-language development (PHP, Go, Java) and choose the best technology for each business requirement. From smart wearable ecosystems to high-concurrency e-commerce platforms, I focus on system architecture design, performance optimization, and cloud-native deployment.',
-                '拥有超过5年的专业经验，专注于PHP、Go、Java多语言开发，能够根据业务需求选择最佳技术方案。从智能穿戴生态到高并发电商平台，在系统架构设计、性能优化、云原生部署和自动化运维方面有丰富实践经验。'
+                '9 years of Internet R&D experience with multi-language development capabilities in PHP, Go, and Java. Long-term experience in large-scale Internet system design and development. Project experience spans live streaming e-commerce, supply chain, local life services, hotel SaaS, and smart wearables, participating in and leading multiple projects serving tens of millions of users.',
+                '9年互联网研发经验，具备 PHP、Go、Java 多语言开发能力，长期负责大型互联网系统设计与研发工作。拥有电商直播、供应链、本地生活、酒店SaaS、智能硬件等领域项目经验，参与并主导多个千万级用户规模项目建设。'
               )}
             </p>
             <p className="text-lg text-outline leading-relaxed">
               {t(
-                'Currently building smart wearable ecosystems, managing three independent systems with real-time data synchronization, blockchain integration, and K8s containerized deployment. Previously developed live-streaming e-commerce and check-in systems serving 3000+ partner merchants.',
-                '目前负责智能手表生态系统开发，管理三个独立系统实现实时数据互联、链上货币转化和K8s容器化部署。曾开发直播电商系统和打卡生态系统，服务3000+合作商家。'
+                'Proficient in microservices architecture, high-concurrency system design, MySQL/Redis performance optimization, message queues, Kubernetes cloud-native deployment, and DevOps automated delivery systems. Capable of complete project delivery from requirements analysis and architecture design to development and deployment. Continuously building open-source projects including Golang scaffolding, Redis desktop client, and browser automation plugins.',
+                '熟悉微服务架构、高并发系统设计、MySQL/Redis性能优化、消息队列、Kubernetes 云原生部署及 DevOps 自动化交付体系，具备从需求分析、架构设计到开发上线的完整项目交付能力。同时持续进行开源项目建设，拥有 Golang 脚手架、Redis 桌面客户端、浏览器自动化插件等多个独立产品开发经验。'
               )}
             </p>
           </motion.div>

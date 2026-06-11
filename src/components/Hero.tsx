@@ -167,7 +167,7 @@ const Hero = () => {
             transition={{ delay: 0.3 }}
             className="font-headline text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight"
           >
-            {t('Full Stack Developer', '全栈开发工程师')} <br />
+            {t('Senior Backend Engineer', '高级后端工程师')} <br />
             <motion.span
               className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-container to-tertiary inline-block"
               animate={{
@@ -182,7 +182,7 @@ const Hero = () => {
                 backgroundSize: '200% 200%',
               }}
             >
-              {t('& Cloud Native Expert', '& 云原生专家')}
+              {t('PHP / Go / Java', 'PHP / Go / Java')}
             </motion.span>
           </motion.h1>
 
@@ -193,8 +193,8 @@ const Hero = () => {
             className="text-xl md:text-2xl text-outline mb-10 max-w-2xl leading-relaxed"
           >
             {t(
-              'Specializing in multi-language development (PHP/Go/Java), cloud-native architecture, and high-concurrency system design. Delivering scalable solutions for e-commerce and smart wearable ecosystems.',
-              '专注于多语言开发（PHP/Go/Java）、云原生架构和高并发系统设计。为电商和智能穿戴生态提供可扩展的解决方案。'
+              '9 years of experience in multi-language development (PHP/Go/Java), microservices architecture, and high-concurrency systems. Expertise in live streaming e-commerce, supply chain, local life services, hotel SaaS, and smart wearables with projects serving tens of millions of users.',
+              '9年多语言开发经验（PHP/Go/Java），专注微服务架构、高并发系统设计。拥有电商直播、供应链、本地生活、酒店SaaS、智能硬件等领域千万级用户规模项目经验。'
             )}
           </motion.p>
 
